@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            }
+
+        ul {
+            list-style: none
+            }
+
+        #box {
+            width: 1200px;
+            height: 400px;
+            margin: 50px auto;
+            border: 1px solid red;
+            overflow: hidden;
+            position: relative;
+            }
+
+        #box ul {
+            width: 1300px;
+            }
+
+        #box li {
+            width: 1200px;
+            height: 400px;
+            position: absolute;
+            }
+    </style>
+
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script src="js/animate-1.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

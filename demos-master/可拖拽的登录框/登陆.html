@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="css/登陆.css">
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jQuery.color.js"></script>
+    <script src="js/登陆.js"></script>
+</head>
+<body>
+<div id="model">
+    <div id="color-lines">
+        <span class="line blue"></span>
+        <span class="line red"></span>
+        <span class="line green"></span>
+        <span class="line yellow"></span>
+    </div>
+    <div id="title">
+        <span class="admin">梦想还是得有的</span>
+        <a class="forgotpassword" href="#">忘记密码？</a>
+    </div>
+    <form id="form" method="post" action="http://www.baidu.com">
+        <div>
+            <span class="inputname">用户名</span>
+            <div class="input">
+                <i class="fa fa-user icons" aria-hidden="true"></i>
+                <input id="username" class="inputframe" type="text" value="邮箱">
+            </div>
+        </div>
+        <div>
+            <span class="inputname">密码</span>
+            <div class="input">
+                <i class="fa fa-lock icons"></i>
+                <input id="password" class="inputframe" type="password" value="Password">
+            </div>
+        </div>
+        <div class="stay">
+            <span id="checkbox" class="checkbox">
+                <span id="check" class="hidden"><i class="fa fa-check fa-2x" aria-hidden="true"></i></span>
+            </span>
+            <label for="staylog"><span class="staylog" id="staylog">保持登陆状态</span></label>
+        </div>
+        <input id="login" value="登陆" type="submit">
+    </form>
+</div>
+</body>
+</html>

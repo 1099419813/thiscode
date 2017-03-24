@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>页面切换</title>
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<div id="container" data-PageSwitch>
+		<div class="sections">
+			<div class="section active" id="section0">
+				<div class="intro">
+					<h1 class="title">page-1</h1>
+					<p>世界那么大，能遇见，不容易。</p>
+				</div>
+			</div>
+			<div class="section" id="section1">
+				<div class="intro">
+					<h1 class="title">Page-2</h1>
+					<p>青春不是一段年华，而是一种心境。</p>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="intro">
+					<h1 class="title">Page-3</h1>
+					<p>目标将决定你称为什么样的人。</p>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="intro">
+					<h1 class="title">Page-4</h1>
+					<p>笑一笑，十年少。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/pageswitch.js"></script>
+	<script type="text/javascript">
+	$("#container").PageSwitch({
+		direction : "horizontal"
+	});
+	</script>
+</body>
+</html>

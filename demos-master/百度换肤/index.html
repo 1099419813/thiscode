@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>换肤</title>
+	<style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url(images/01.jpg);
+        }
+
+        #mask {
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 200px;
+            text-align: center;
+        }
+
+        #mask img {
+            width: 200px;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="mask">
+    <img src="images/01.jpg" alt="">
+    <img src="images/02.jpg" alt="">
+    <img src="images/03.jpg" alt="">
+    <img src="images/04.jpg" alt="">
+    <img src="images/05.jpg" alt="">
+</div>
+<script>
+    var mask = document.getElementById("mask");
+    //var imgs = mask.getElementsByTagName("img");
+    var imgs = mask.children
+    for (var i=0; i<imgs.length; i++) {
+        imgs[i].onclick = function() {
+            document.body.style.backgroundImage = "url("+this.src+")"
+        };
+    };
+</script>
+
+</body>
+</html>
